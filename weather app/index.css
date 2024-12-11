@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+}
+
+/* Full-page background image with reduced opacity */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: url("img/weather\ app\ photo.jpg") no-repeat center center/cover;
+
+  opacity: 0.4; /* Adjust the opacity of the image */
+  z-index: -1;
+}
+h1 {
+  font-size: 3.5rem; /* Slightly smaller font size for elegance */
+  margin: 10px 0;
+  margin-top: 5rem;
+  font-family: "Merriweather", serif; /* Serif font for a classic feel */
+  text-transform: uppercase; /* Capitalize all letters */
+  color: #333; /* Dark gray text color */
+  text-shadow: none; /* No shadow for a cleaner look */
+  letter-spacing: 2px; /* Slightly increased spacing */
+  position: absolute;
+  top: 20px; /* Position at the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for perfect centering */
+}
+
+.content {
+  margin-top: rem; /* Space below the heading */
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Spacing between input and button */
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#weather {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1rem; /* Reduced font size for smaller screens */
+    top: 10px;
+    margin-bottom: 10px; /* Reduce space below the heading */
+  }
+
+  .content {
+    margin-top: -200px; /* Decrease the gap between h1 and content */
+  }
+
+  .input-container {
+    flex-direction: column; /* Stack input and button vertically */
+    gap: 10px; /* Spacing between input and button */
+  }
+
+  input {
+    width: 100%; /* Full width for smaller screens */
+    font-size: 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  #weather {
+    font-size: 1rem;
+    max-width: 100%; /* Ensure it adjusts to screen width */
+  }
+}
