@@ -1,4 +1,4 @@
-https://cloudclue.netlify.app/ --vist the page
+
 The Weather App is a sleek and minimalistic application that provides real-time weather updates for cities around the world. Designed with a user-friendly interface, this app combines functionality and elegance to deliver an intuitive weather-checking experience.
 
 Features.......
